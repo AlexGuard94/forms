@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Формы хуЙормы</title>
+  </head>
+  <body>
+    <form>
+      <label for="name"> Имя:</label> <br />
+      <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        minlength="2"
+        maxlength="16"
+        size="15"
+      />
+      <br />
+
+      <label for="surname"> Фамилия:</label> <br />
+      <input
+        type="text"
+        id="surname"
+        name="surname"
+        required
+        minlength="2"
+        maxlength="16"
+        size="15"
+      />
+      <br />
+      <label for="email">Введите свой email:</label><br />
+      <input type="email" id="email" size="30" required /><br />
+      <label for="pass">Пассворд:</label><br />
+      <input
+        type="password"
+        id="pass"
+        name="password"
+        minlength="8"
+        required
+      /><br />
+      <label for="birth">Дата рождения:</label><br />
+      <input name="birth" type="date" /><br /><br />
+      <label for="tentacles">Сколько времени ты тратишь в интернете:</label
+      ><br />
+      <input
+        type="number"
+        id="tentacles"
+        name="tentacles"
+        min="1"
+        max="10000"
+      /><br /><br />
+      <input type="radio" id="male" name="sex" value="male" checked />
+
+      <label for="male">Мужчина</label>
+      <input type="radio" id="female" name="sex" value="female" />
+      <label for="female">Не мужчина</label><br /><br />
+
+      <label for="country-select">Вибери страну:</label><br />
+      <select name="country" id="country-select">
+        <option value="" hidden>-вибери страну-</option>
+        <option value="ukraine">Украина</option>
+        <option value="germany">Германия</option>
+        <option value="france">Франция</option>
+        <option value="poland">Польша</option>
+        <option value="usa">ЮЭСЭЙ</option>
+        <option value="italy">Италия</option></select
+      ><br /><br />
+      <label for="avatar">Выбери фотку:</label><br />
+
+      <input
+        type="file"
+        id="avatar"
+        name="avatar"
+        accept="image/png, image/jpeg"
+      />
+      <br /><br />
+
+      <label for="color">Выбери основной цвет своего профиля:</label><br />
+      <input type="color" id="color" name="color" value="#e66465" /><br />
+
+      <p>Выбери интересующие тебя темы:</p>
+
+      <input type="checkbox" id="it" name="it" />
+      <label for="it">IT</label>
+
+      <input type="checkbox" id="sport" name="sport" />
+      <label for="sport">Sport</label>
+
+      <input type="checkbox" id="books" name="books" />
+      <label for="books">Books</label>
+
+      <input type="checkbox" id="art" name="art" />
+      <label for="art">Art</label><br /><br />
+      <label for="story">Добавь комментарий по-братски:</label> <br />
+
+      <textarea id="comment" name="comment" rows="5" cols="30"></textarea
+      ><br /><br />
+      <div class="controls">
+        <input type="reset" value="Reset" />
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+  </body>
+</html>
